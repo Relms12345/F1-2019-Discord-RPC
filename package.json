@@ -1,28 +1,44 @@
 {
-  "name": "discord-f1-rpc-plugin",
-  "version": "1.0.0",
-  "description": "F1 2019 Game Plugin for Discord RPC",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "author": "relms <relms@furcordapp.com>",
-  "license": "MIT",
-  "private": true,
-  "bin": "dist/index.js",
-  "dependencies": {
-    "discord-rpc": "^3.1.1",
-    "f1-telemetry-client": "^0.1.16",
-    "find-process": "^1.4.3",
-    "winston": "^3.3.3"
-  },
-  "devDependencies": {
-    "@types/binary-parser": "^1.5.0",
-    "@types/discord-rpc": "^3.0.4",
-    "@types/node": "^14.0.14",
-    "prettier": "^2.0.5",
-    "typescript": "^3.9.6"
-  },
-  "pkg": {
-    "scripts": "build/**/*.js",
-    "output": "out/"
-  }
+	"name": "discord-f1-rpc-plugin",
+	"version": "0.0.0-development",
+	"description": "F1 2019 Game Plugin for Discord RPC",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"author": "relms <relms@furcordapp.com>",
+	"license": "MIT",
+	"private": true,
+	"bin": "dist/index.js",
+	"dependencies": {
+		"discord-rpc": "^3.1.1",
+		"f1-telemetry-client": "^0.1.16",
+		"find-process": "^1.4.3",
+		"winston": "^3.3.3"
+	},
+	"devDependencies": {
+		"@types/binary-parser": "^1.5.0",
+		"@types/discord-rpc": "^3.0.4",
+		"@types/node": "^14.0.14",
+		"commitizen": "^4.1.2",
+		"cz-conventional-changelog": "3.2.0",
+		"prettier": "^2.0.5",
+		"semantic-release": "^17.1.1",
+		"typescript": "^3.9.6"
+	},
+	"pkg": {
+		"scripts": "build/**/*.js",
+		"output": "out/"
+	},
+	"scripts": {
+		"semantic-release": "semantic-release",
+		"commit": "git-cz"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Relms12345/F1-2019-Discord-RPC.git"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	}
 }
